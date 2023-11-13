@@ -9,3 +9,5 @@ The easiest and quickest way to use the cross-section extraction visualization t
 extract_and_visualize_cross_sections('D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Data\Shapefiles\Cross sections.shp', 'D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Data\DEM.tif', n_points=3, csv_output_dir='D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Samples', png_output_dir='D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Samples')
 
 ## Acknowledgement
+
+Dong, P., Zhong, R., Xia, J., & Tan, S. (2020). A semi-automated method for extracting channels and channel profiles from lidar-derived digital elevation models. Geosphere, 16(3), 806-816.
