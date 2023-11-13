@@ -1,4 +1,10 @@
-# CrossSectionsExtractionVisualization
+# CrossSectionsExtractionVisualization (CSEV)
 The cross-section extraction visualization tool automates extracting cross-sections with their horizontal distance and elevation. The repository contains notebooks and ArcGIS Pro Tool for cross-section extraction and visualization.
+
 ## Usage Guide
-The easiest and quickest way to use RWC is to run it from Google Earth Engine JavaScript code editor (https://developers.google.com/earth-engine/playground), where the functions in the RWC can be directly loaded and need no setup. The README file in the RivWidthCloud_JavaScript folder contains example script to run RWC for one Landsat image. If you need to run RWC over many Landsat images, then running the Python version might be more efficient.
+The easiest and quickest way to use the cross-section extraction visualization tool is to run it from ArcPro Toolboxes, where the functions can be directly loaded without setup. 
+
+
+### Example usage:
+extract_and_visualize_cross_sections('D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Data\Shapefiles\Cross sections.shp', 'D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Data\DEM.tif', n_points=3, csv_output_dir='D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Samples', png_output_dir='D:\OneDrive - The University of Alabama\Class Work\Fall 2023\GY539\Class\GY539_FinalProject\CrossSectionExtractionVisualization\Samples')
+
