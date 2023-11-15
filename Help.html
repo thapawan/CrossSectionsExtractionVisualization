@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+body {
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+ol, ul {
+    text-align: left;
+}
+
+h1 {
+    background-color: #2f8d47;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 15px;
+    font-size: 28px;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 0 10px 10px 0;
+    background-color: whitesmoke;
+    margin-left: calc(50% - 310px);
+}
+
+h3 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+}
+
+code {
+    color: white;
+    background-color: #2f8d47;
+    font-style: italic;
+    padding: 15px;
+    display: inline-block;
+    margin: 15px;
+    border: 2px solid green;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Help for Cross Sections Extraction Visualization Tool</h1>
+    <p><h3>This is a tool for ArcGIS Pro.</h3>Built with ArcGIS Pro 3.1.1<br>
+    Python version 3.9.16</p>
+
+    <h3>This is an ArcGIS Pro tool to extract cross-sectional profiles and visualize elevation data. It takes an input elevation raster (DEM), cross-section shapefile, number of points along each profile, and outputs comma-separated values (CSVs) files and Portable Network Graphics (PNG) images.</h3>
+
+    <p>The underlying steps involved are:</p>
+    <ol>
+        <li>Extracting cross-sectional profiles from cross-sectional line data.</li>
+        <li>Collecting elevation data from a Digital Elevation Model (DEM) raster.</li>
+        <li>Calculating horizontal distances and elevations for points along the profiles.</li>
+        <li>Generating CSV files with the extracted data.</li>
+        <li>Creating PNG images to visualize cross-sectional profiles.</li>
+        <li>Enabling users to specify output directories and the number of points.</li>
+    </ol>
+
+    <p style="font-size: 120%; font-weight: bold;">This tool is used to compute the total area of upstream that contributes drain water at a location.</p>
+
+    <h2>Inputs required:</h2>
+    <p style="font-size: 120%; font-weight: bold;">Input:</p>
+    <p>Cross-section shapefile, Digital Elevation Model (DEM) raster representing the terrain of the area of interest, Number of points for each cross-section line.</p>
+
+    <p style="font-size: 120%; font-weight: bold;">Output Directories:</p>
+    <p>Provide the name to store the output. If a full path is provided, the output will be saved to that file. If only the name is provided, the output will be saved in the same location as the input file. If no file extension is provided, the file will be saved as default CSVs and PNG formats.</p>
+
+    <p>Demo data is included in the "Samples" folder in the same directory as the tool. For using it as a geoprocessing python tool and other things, please refer to the item description metadata within the tool from ArcGIS Pro.</p>
+
+    <div class="code">
+        <code>
+            import arcpy<br>
+            import geopandas as gpd<br>
+            import numpy as np<br>
+            import pandas as pd<br>
+            import rasterio<br>
+            import matplotlib.pyplot as plt<br>
+            import os <br><br>
+
+            toolpath = 'path of tool up to .tbx'<br>
+            cross_sections_shapefile = r"Cross sections.shp"<br>
+            dem_raster = 'DEM.tif'<br>
+            n_points = 5 <br><br>
+
+            # Change workspace to the parent directory of the tool<br>
+            descT = arcpy.Describe(toolpath)<br>
+            os.chdir(descT.path)<br>
+            os.chdir('Samples')<br><br>
+
+            arcpy.env.workspace = os.getcwd()<br>
+            cross_sections_shapefile = r"Cross sections.shp"<br>
+            dem_raster = 'DEM.tif'<br>
+            n_points = 5 <br>
+            csv_output_dir = output <br>
+            png_output_dir = output <br><br>
+
+            # Import tool to arcpy<br>
+            arcpy.ImportToolbox(toolpath)<br><br>
+
+            # Run the tool by calling arcpy followed by dot followed by toolbox alias<br>
+            # followed by dot followed by toolname followed by a list of parameters<br>
+            # inside parenthesis.<br><br>
+
+            arcpy.NewToolbox.CrossSectionsExtractionVisualization(cross_sections_shapefile, dem_raster, n_points=5, csv_output_dir='.', png_output_dir='.')<br>
+        </code>
+    </div>
+
+    <h2>Credit:</h2>
+    <p style="font-style: italic;">Prepared by: Pawan Thapa
+    Email: <span style="text-decoration: underline; color: blue"><a href="mailto:pthapa2@crimson.ua.edu">pthapa2@crimson.ua.edu</a></span>
+    As part of GY 539 Final Project</p>
+</div>
+</body>
+</html>
