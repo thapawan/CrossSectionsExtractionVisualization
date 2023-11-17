@@ -23,15 +23,15 @@ The code is an ArcGIS Python Toolbox that is designed to be used within ArcGIS P
 
    a. Extracts the starting and ending coordinates of the line.
 
-   b. Divides the line into a specified number of points (default: 5) and calculates the latitude and longitude of these points.
+   b. Divide the line into a specified number of points (default: 5) and calculate the latitude and longitude of these points.
 
-   c. Creates a Pandas DataFrame containing latitude and longitude data.
+   c. Create a Pandas DataFrame containing latitude and longitude data.
 
    d. Converts the DataFrame to a GeoDataFrame, specifying the coordinate reference system (CRS).
 
    e. Calculates the horizontal distance (h_distance) for each point from the starting point of the line.
 
-   f. Extracts elevation data for each point from the DEM raster using `rasterio`.
+   f. Extract elevation data for each point from the DEM raster using `rasterio`.
 
    g. Extracts h_distance and elevation columns from the GeoDataFrame and stores them in a Pandas DataFrame.
 
@@ -41,18 +41,18 @@ The code is an ArcGIS Python Toolbox that is designed to be used within ArcGIS P
 
 4. If any errors occur during the execution of the tool, it reports the error message.
 
-5. The `postExecute` method is called after the tool has executed, but in this case, it does not perform any additional actions.
+5. The `postExecute` method is called after the tool has been executed, but in this case, it does not perform any additional actions.
 
 
 ## Acknowledgement
-I acknowledge the YouTube video made by the GeoDev Tools channel for the video of the crosssection extractor and other contributors for successful implementation.
+I acknowledge the YouTube video made by the GeoDev Tools channel for the video of the crosssection extractor and the valuable feedback by the GY539 GIS Programming professor (Dr. Sagy Cohen) and advisor (Dr. Hongxing Liu), also for other direct and indirect contributions to build and implement this tool.
 
 Dong, P., Zhong, R., Xia, J., & Tan, S. (2020). A semi-automated method for extracting channels and channel profiles from lidar-derived digital elevation models. Geosphere, 16(3), 806-816.
 
 ## Contact
-We welcome any valuable feedback or suggestions for improvement. If you have any queries about the algorithm, open for discussion and contact:
+Open for collaboration and welcome any valuable feedback or suggestions for improvement. If you have any queries about the algorithm, open for discussion and contact:
 pthapa2@crimson.ua.edu.
 
 ## Future work
-Currently it provides CSVs and PNG file in the further extension is available in GitHub repository with folder name of CrossSectionsExtractionVisualizationExtension which tool tries to convert point to line which have shapefile (.shp), raster (.tif) and save it in the ArcGIS Pro content.
+Currently, it provides CSVs and PNG files further extension is available in the GitHub repository with the folder name of CrossSectionsExtractionVisualizationExtension which tool tries to convert point to line which has shapefile (.shp), raster (.tif) and save it in the ArcGIS Pro content.
 
