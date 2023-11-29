@@ -2,8 +2,7 @@
 The cross-section extraction visualization tool automates extracting cross-sections with their horizontal distance and elevation. The repository contains notebooks and ArcGIS Pro Tool for cross-section extraction and visualization.
 
 ## Installation of required packages
-In jupyter notebook use this command:
-#install required libraries if not installed by uncommenting it
+In jupyter notebook use this command:install required libraries if not installed by uncommenting it
 
 #!pip install geopandas
 #!pip install numpy
