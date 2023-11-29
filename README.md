@@ -1,9 +1,27 @@
 # CrossSectionsExtractionVisualization (CSEV)
 The cross-section extraction visualization tool automates extracting cross-sections with their horizontal distance and elevation. The repository contains notebooks and ArcGIS Pro Tool for cross-section extraction and visualization.
 
+## Installation of required packages
+In jupyter notebook use this command:
+#install required libraries if not installed by uncommenting it
+
+#!pip install geopandas
+#!pip install numpy
+#!pip install pandas
+#!pip install rasterio
+#!pip install matplotlib
+
+In ArcGIS Pro Notebook
+#pip install geopandas
+#pip install numpy
+#pip install pandas
+#pip install rasterio
+#pip install matplotlib
+
+Also, you can use package manager, to add neccessary packages to operate this program such as rasterio, geopandas, numpy, pandas, and matplotlib.
+
 ## Usage Guide
 The easiest and quickest way to use the cross-section extraction visualization tool is to run it from ArcPro Toolboxes, where the functions can be directly loaded without setup. 
-
 
 ### Example usage
 extract_and_visualize_cross_sections('Data\Shapefiles\Cross sections.shp', 'Data\DEM.tif', n_points=3, csv_output_dir='Samples', png_output_dir='Samples')
