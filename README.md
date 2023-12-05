@@ -5,12 +5,17 @@ The cross-section extraction visualization tool automates extracting cross-secti
 For jupyter notebook use this command:install required libraries if not installed by uncommenting it
 
 #!pip install geopandas
+
 #!pip install numpy
+
 #!pip install pandas
+
 #!pip install rasterio
+
 #!pip install matplotlib
 
 For ArcGIS Pro Notebook, you can do the same:
+
 #pip install geopandas
 
 #pip install numpy
