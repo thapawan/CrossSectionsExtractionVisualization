@@ -4,8 +4,8 @@ The cross-section extraction visualization tool automates extracting cross-secti
 ## Installation of required packages
 In jupyter notebook use this command:install required libraries if not installed by uncommenting it
 
-#!pip install geopandas
-#!pip install numpy
+!pip install geopandas
+!pip install numpy
 #!pip install pandas
 #!pip install rasterio
 #!pip install matplotlib
@@ -17,7 +17,7 @@ In ArcGIS Pro Notebook
 #pip install rasterio
 #pip install matplotlib
 
-Also, you can use package manager, to add neccessary packages to operate this program such as rasterio, geopandas, numpy, pandas, and matplotlib.
+Also, you can use package manager in ArcGIS Pro, to add neccessary packages to operate this program such as rasterio, geopandas, numpy, pandas, and matplotlib.
 
 ## Usage Guide
 The easiest and quickest way to use the cross-section extraction visualization tool is to run it from ArcPro Toolboxes, where the functions can be directly loaded without setup. 
