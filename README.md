@@ -28,6 +28,7 @@ The code is an ArcGIS Python Toolbox that is designed to be used within ArcGIS P
 1. Takes input parameters:
    - Cross Sections Shapefile (a shapefile containing cross-sectional lines)
    - Digital Elevation Model (DEM) Raster (a raster dataset representing elevation data)
+   - Number of points
    - CSV Output Directory (a directory for saving CSV files)
    - PNG Output Directory (a directory for saving PNG images)
 
