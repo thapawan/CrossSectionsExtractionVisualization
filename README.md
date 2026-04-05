@@ -20,7 +20,7 @@ Other options, installing it by using the package manager in ArcGIS Pro, to add 
 The easiest and quickest way to use the cross-section extraction visualization tool is to run it from ArcPro Toolboxes, where the functions can be directly loaded without setup. The tutorial for using the tool is shared on my YouTube channel (learnsomethingtoday): https://youtu.be/J0KKxBf-vLI
 
 ### Example usage
-extract_and_visualize_cross_sections('Data\Shapefiles\Cross sections.shp', 'Data\DEM.tif', n_points=3, csv_output_dir='Samples', png_output_dir='Samples')
+Extract_and_visualize_cross_sections('Data\Shapefiles\Cross sections.shp', 'Data\DEM.tif', n_points=3, csv_output_dir='Samples', png_output_dir='Samples')
 
 ### Explanation
 The code is an ArcGIS Python Toolbox that is designed to be used within ArcGIS Pro. It is a custom geoprocessing tool that performs the following tasks:
@@ -60,7 +60,7 @@ The code is an ArcGIS Python Toolbox that is designed to be used within ArcGIS P
 
 
 ## Acknowledgement
-I acknowledge the YouTube video made by the GeoDev Tools channel for the video of the crosssection extractor and the valuable feedback by the GY539 GIS Programming professor (Dr. Sagy Cohen) and advisor (Dr. Hongxing Liu), also for other direct and indirect contributions to build and implement this tool.
+I acknowledge the YouTube video made by the GeoDev Tools channel for the video of the crosssection extractor and the valuable feedback by the GY539 GIS Programming, also for other direct and indirect contributions to build and implement this tool.
 
 Dong, P., Zhong, R., Xia, J., & Tan, S. (2020). A semi-automated method for extracting channels and channel profiles from lidar-derived digital elevation models. Geosphere, 16(3), 806-816.
 
