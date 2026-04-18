@@ -22,9 +22,9 @@ The easiest and quickest way to use the cross-section extraction visualization t
 ### Example usage
 Extract_and_visualize_cross_sections('Data\Shapefiles\Cross sections.shp', 'Data\DEM.tif', n_points=3, csv_output_dir='Samples', png_output_dir='Samples')
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4b18c544-a464-4355-a1f6-4380c102767a" />
+<img width="1536" height="1024" alt="image" src="https://github.com/thapawan/CrossSectionsExtractionVisualization/blob/main/Samples/XS_0.png" />
 
-Figure 1: Conceptual illustration of temporal cross‑section change attribution. Elevation profiles extracted from the same cross‑section at two time steps (t₁ and t₂) are normalized to a common lateral coordinate system. Differences between profiles define zones of net material removal (cut) and deposition (fill), enabling standardized, quantitative comparison across time rather than visual inspection alone.
+Figure 1: Crosssection profile of starting coordinate with h_distance on the x-axis and elevation on the y-axis
 
 ### Explanation
 The code is an ArcGIS Python Toolbox that is designed to be used within ArcGIS Pro. It is a custom geoprocessing tool that performs the following tasks:
